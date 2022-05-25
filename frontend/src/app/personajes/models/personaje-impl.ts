@@ -1,16 +1,16 @@
 import { Personaje } from "./personaje";
 
 export class PersonajeImpl implements Personaje{
-    nombre!: string;
-    estatura!: string;
-    peso!: string;
-    colorPelo!: string;
-    colorPiel!: string;
-    colorOjos!: string;
-    fechaNac!: string;
-    genero!: string;
-    planeta!: string;
-    peliculas!: any[];
+    nombre: string;
+    estatura: string;
+    peso: string;
+    colorPelo: string;
+    colorPiel: string;
+    colorOjos: string;
+    fechaNac: string;
+    genero: string;
+    planeta: string;
+    peliculas: any[];
 
     constructor(name: any, height: any, mass: any, hair_color: any, skin_color: any, eye_color: any, birth_year: any, gender: any, homeworld: any, films: any[]) {
 	

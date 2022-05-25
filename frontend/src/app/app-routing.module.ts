@@ -6,12 +6,23 @@ const routes: Routes = [
   {    
     path: "",
     loadChildren: () => import("./home/home.module").then((m) => m.HomeModule),
-  }, 
+  },
+   {
+    path: "config" , //ruta no indicada
+    loadChildren: () => import ( "./config/config.module" ). then ( (m) => m.ConfigModule),
+  },
   {
 	
     path: 'personajes',
 	
     loadChildren: () => import('./personajes/personajes.module').then(m => m.PersonajesModule)
+	
+  },
+  {
+	
+    path: 'planeta',
+	
+    loadChildren: () => import('./planetas/planetas.module').then(m => m.PlanetasModule)
 	
   },
   {
