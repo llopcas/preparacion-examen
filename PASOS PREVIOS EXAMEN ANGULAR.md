@@ -138,6 +138,7 @@ PASOS PREVIOS EXAMEN ANGULAR
     @Component({
     selector: 'app-root',
      templateUrl: './app.component.html',
+     styleUrls: ['./app.component.css']
      styles: []
     })
     export class AppComponent {
@@ -171,7 +172,7 @@ export class AppRoutingModule {}
 
 - home-routing.module.ts
      
-     mport { NgModule } from '@angular/core';
+     Import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
  
