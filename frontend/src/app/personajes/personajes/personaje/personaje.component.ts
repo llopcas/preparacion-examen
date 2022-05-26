@@ -8,7 +8,7 @@ import { PersonajeImpl } from '../../models/personaje-impl';
   styleUrls: ['./personaje.component.css']
 })
 export class PersonajeComponent implements OnInit {
-  @Input() personaje: Personaje = new PersonajeImpl('', '', '', '', '', '', '', '', '', []);;
+  @Input() personaje: Personaje = new PersonajeImpl('', '', '', '', '', '', '', '', '', []);
 	@Output() personajeEliminar = new EventEmitter<Personaje>()
   constructor() { }
 
