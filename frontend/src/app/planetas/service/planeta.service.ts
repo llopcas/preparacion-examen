@@ -12,7 +12,8 @@ export class PlanetaService {
   constructor(private http: HttpClient) { }
 
   getPlaneta(id: string): Observable<any> {
-    return this.http.get<any>(`${this.urlEndPoint}${id}`);
+    console.log('planeta = ', `${this.urlEndPoint}${id}/`);
+    return this.http.get<any>(`${this.urlEndPoint}${id}/`);
   }
 }
 

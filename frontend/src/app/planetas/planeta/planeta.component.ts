@@ -10,17 +10,19 @@ import { PlanetaService } from '../service/planeta.service';
 })
 export class PlanetaComponent implements OnInit {
   planeta$: Observable<any> = new Observable<any>();
-  constructor(private activateRoute: ActivatedRoute,	
+
+  constructor(private activateRoute: ActivatedRoute,
     private planetaService: PlanetaService) { }
-    
+
     ngOnInit(): void {
-    throw new Error('Method not implemented.');
+      this.cargarPlaneta();
   }
+
   cargarPlaneta(): any {
-	
-    return this.planetaService.getPlaneta(this.activateRoute.snapshot.params['id']);
-		
+    console.log('id = ', this.activateRoute.snapshot.params['id']);
+    this.planeta$ = this.planetaService.getPlaneta(this.activateRoute.snapshot.params['id']);
+
   }
-	
+
 }
 

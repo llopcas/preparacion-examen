@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { PlanetaComponent } from './planeta/planeta.component';
 
 const routes: Routes = [  {
-	
-  path: ':id',
+
+  path: '',
 
   component: PlanetaComponent
 
