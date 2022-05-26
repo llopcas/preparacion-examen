@@ -6,8 +6,8 @@
   <div class="col-10 col-sm-10 col-md-3 col-lg-2 col-xl-2">COLOR DE PELO</div>
 </div>
 
-<div *ngFor="let personaje of personajes">
-  <app-personaje-item [personaje]="personaje" (personajeSeleccionado)="verDatos($event)"></app-personaje-item>
+<div *ngFor = "let personaje of personajes">
+  <app-personaje-item [personaje]="personaje" (personajeSeleccionado) = "verDatos($event)"></app-personaje-item>
 </div>
 
 <!-- Modal -->
@@ -22,7 +22,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <app-personaje [personaje]='personajeVerDatos' (personajeEliminar)='onPersonajeEliminar($event)'></app-personaje>
+        <app-personaje [personaje] ='personajeVerDatos' (personajeEliminar) = 'onPersonajeEliminar($event)'></app-personaje>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

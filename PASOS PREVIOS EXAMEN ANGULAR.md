@@ -16,7 +16,7 @@ PASOS PREVIOS EXAMEN ANGULAR
  * npm install jquery --save
  * npm install bootstrap --save 
  -- un solo comando npm i bootstrap jquery popper.js --save
-
+* npm install bootstrap@4.6.1 --save
  y se adjuntan al angular.json
   "styles": [
               "src/styles.css",

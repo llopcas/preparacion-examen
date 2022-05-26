@@ -22,7 +22,8 @@ import { PersonajeFormComponent } from './personaje-form/personaje-form.componen
     PersonajesRoutingModule,
     FormsModule
   ],
-	
+	exports: [ PersonajeComponent],
+
   providers: [AuxiliarService]
 })
 export class PersonajesModule { }
