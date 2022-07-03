@@ -32,7 +32,7 @@ PASOS PREVIOS EXAMEN ANGULAR
     $ npm install @fortawesome/fontawesome-svg-core
     $ npm install @fortawesome/free-solid-svg-icons
     # See Compatibility table below to choose a correct version
-    $ npm install @fortawesome/angular-fontawesome@<version>
+    $ npm install @fortawesome/angular-fontawesome@0.10.x
 
     * añadir al app.module.ts 
     import  {  FontAwesomeModule  }  desde  '@fortawesome/angular-fontawesome' ;
